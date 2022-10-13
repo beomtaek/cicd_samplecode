@@ -10,7 +10,7 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: 192.168.8.10
+    server: 192.168.8.100
     path: /nfs_shared/jenkins
 ---
 apiVersion: v1
