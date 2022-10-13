@@ -2,7 +2,7 @@
 jkopt1="--sessionTimeout=1440"
 jkopt2="--sessionEviction=86400"
 jvopt1="-Duser.timezone=Asia/Seoul"
-jvopt2="-Dcasc.jenkins.config=jenkins-config.yaml"
+jvopt2="-Dcasc.jenkins.config=https://github.com/beomtaek/cicd_samplecode/blob/4b32b6f7a3ab3cb11fa02847fa0aca6b7f2309fc/jenkins-config.yaml"
 jvopt3="-Dhudson.model.DownloadService.noSignatureCheck=true"
 
 helm install jenkins edu/jenkins \
