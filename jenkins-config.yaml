@@ -53,8 +53,8 @@ jenkins:
             hostPath: "/usr/bin/kubectl"
             mountPath: "/usr/bin/kubectl"
         - hostPathVolume:
-            hostPath: "/bin/docker"
-            mountPath: "/bin/docker"
+            hostPath: "/usr/bin/docker"
+            mountPath: "/usr/bin/docker"
         - hostPathVolume:
             hostPath: "/var/run/docker.sock"
             mountPath: "/var/run/docker.sock"
