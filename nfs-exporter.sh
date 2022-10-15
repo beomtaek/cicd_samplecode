@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 nfsdir=/nfs_shared/$1
 if [ $# -eq 0 ]; then
   echo "usage: nfs-exporter.sh <name>"; exit 0
@@ -9,5 +10,5 @@ if [[ ! -d $nfsdir ]]; then
   if [[ $(systemctl is-enabled nfs) -eq "disabled" ]]; then
     systemctl enable nfs
   fi
-   systemctl restart nfs
+    systemctl restart nfs
 fi
