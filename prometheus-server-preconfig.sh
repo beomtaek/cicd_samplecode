@@ -21,7 +21,7 @@ echo "[Step 2/4] ok"
 nfsdir=/nfs_shared/prometheus/server
 echo "[Step 3/4] Task [Create NFS directory for prometheus-server]"
 if [ ! -e "$nfsdir"  ]; then
-  nfs-exporter.sh prometheus/server
+  ./nfs-exporter.sh prometheus/server
   chown 1000:1000 $nfsdir
   echo "$nfsdir created"
   echo "[Step 3/4] Successfully completed"
