@@ -9,7 +9,7 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: 192.168.8.100
+    server: 211.183.3.100
     path: /nfs_shared/prometheus/server
 ---
 apiVersion: v1
