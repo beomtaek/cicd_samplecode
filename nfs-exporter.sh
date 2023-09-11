@@ -6,7 +6,7 @@ fi
 
 if [[ ! -d $nfsdir ]]; then
   mkdir -p $nfsdir
-  echo "$nfsdir 192.168.8.0/24(rw,sync,no_root_squash)" >> /etc/exports
+  echo "$nfsdir 211.183.3.0/24(rw,sync,no_root_squash)" >> /etc/exports
   if [[ $(systemctl is-enabled nfs) -eq "disabled" ]]; then
     systemctl enable nfs
   fi
